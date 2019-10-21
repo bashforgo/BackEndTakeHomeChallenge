@@ -1,19 +1,18 @@
 import IUser from './IUser'
-import IListing from './IListing'
 
 export default class User implements IUser {
   private id: number
   private name: string
-  private listings: Array<IListing>
+  private username: string
 
-  constructor({ id, name, listings = [] }) {
+  constructor({ id, name, username }) {
     this.id = id
     this.name = name
-    this.listings = listings
+    this.username = username
   }
 
   /**
-   * Returns the UUID 
+   * Returns the incremental id
    */
   public getId() {
     return this.id
@@ -27,25 +26,18 @@ export default class User implements IUser {
   }
 
   /**
+   * Returns the username of this user
+   */
+  public getUsername() {
+    return this.username
+  }
+
+
+  /**
    * Sets the name of this user
    */
   public updateName(name: string) {
     this.name = name
-    return this
-  }
-
-  /**
-   * Get listings
-   */
-  public getListings() {
-    return this.listings
-  }
-
-  /**
-   * Adds a new listing to this user
-   */
-  public addListing(listing: IListing) {
-    this.listings.push(listing)
     return this
   }
 
@@ -56,7 +48,7 @@ export default class User implements IUser {
     return {
       id: this.getId(),
       name: this.getName(),
-      listings: this.getListings()
+      username: this.getUsername(),
     }
   }
 }

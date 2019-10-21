@@ -14,14 +14,14 @@ export default class UsersService {
   /**
    * Creates new user
    */
-  public create(name: string): IUser {
+  public create(name: string, username: string): IUser {
     if (name.length > 50) {
       throw new BadRequestError('It looks like your name is too long. Maybe you should change it? :)')
     }
 
     const lastId = getLastIdUsers()
     const user = new User({
-      name, id: lastId + 1,
+      name, username, id: lastId + 1,
     })
 
     addUser(user)

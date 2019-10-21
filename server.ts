@@ -2,6 +2,7 @@ import Koa from 'koa'
 import Router from 'koa-router'
 import cors from '@koa/cors'
 import bodyParser from 'koa-bodyparser'
+import { default as userRoutes } from './src/routes/users'
 
 // environment variables
 process.env.PORT = '3000'
@@ -14,11 +15,11 @@ app.use(cors())
 app.use(bodyParser())
 
 // bind REST routes
-require('./src/routes/users')(router)
+router.use('/users', userRoutes)
 
 // alow methods
 app.use(router.routes()).use(router.allowedMethods())
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server started on port ${process.env.PORT || 80}`)
+  console.log(`Server started on port ${process.env.PORT || 3000}`)
 })

@@ -1,27 +1,30 @@
 import UsersService from '../services/UsersService'
 import BadRequestError from '../errors/BadRequestError'
 import IUser from '../models/IUser'
+import Router from 'koa-router';
+
 const usersService = new UsersService()
+const router = new Router()
 
-module.exports = app => {
-  app.get('/users', async ctx => {
-    const users: Array<IUser> = usersService.getAll()
+router.get('/', async ctx => {
+  const users: Array<IUser> = usersService.getAll()
 
-    ctx.body = {
-      users: users.map(user => user.toObject())
-    }
-  })
+  ctx.body = {
+    users: users.map(user => user.toObject())
+  }
+})
 
-  app.post('/users', async ctx => {
-    const { name } = ctx.request.body
-    if (!name) {
-      throw new BadRequestError('Name not defined.')
-    }
+router.post('/', async ctx => {
+  const { name, username } = ctx.request.body
+  if (!name) {
+    throw new BadRequestError('Name not defined.')
+  }
 
-    const user: IUser = usersService.create(name)
+  const user: IUser = usersService.create(name, username)
 
-    ctx.body = {
-      user: user.toObject()
-    }
-  })
-}
+  ctx.body = {
+    user: user.toObject()
+  }
+})
+
+export default router.routes()

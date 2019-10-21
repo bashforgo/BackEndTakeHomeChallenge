@@ -5,37 +5,35 @@ const users = [
   {
     id: 1,
     name: 'Daenerys Targaryen',
-    listings: []
+    username: 'daqueenbee',
   },
   {
     id: 2,
     name: 'Jon Snow',
-    listings: []
+    username: 'forthebrotherhood'
   },
   {
     id: 3,
     name: 'Sansa Stark',
-    listings: []
+    username: 'joffery.fan'
   },
   {
     id: 4,
     name: 'Ned Stark',
-    listings: []
+    username: 'honouraboveall'
   },
   {
     id: 5,
     name: 'Cersei Lannister',
-    listings: []
+    username: 'bestmuminwesteros'
   }
 ]
 
 export const getLastIdUsers = () => users.reduce((prev, current) => (prev.id > current.id) ? prev : current).id
 export const getAllUsers = () => users.map(user => new User(user))
-export const findUserById = (id) => users.find(user => user.id === id)
+export const findUserById = (id: number) => users.find(user => user.id === id)
 export const addUser = (user: IUser) => users.push({
   id: user.getId(),
   name: user.getName(),
-  listings: user.getListings()
+  username: user.getUsername(),
 })
-
-
