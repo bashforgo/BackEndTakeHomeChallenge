@@ -36,7 +36,7 @@ Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2
 * Be creative with this. We want to see a functional API. When in doubt, make an executive decision. If you finish early, feel free to polish it up.
 * Use the trending API to fetch a list of gifs from [Giphy API](https://developers.giphy.com/docs/). API Key: `YQD46PNuiExynupQ46HOzJqctivOHt16`
 * Once finished, create a private repo and add `grigorecezar` or 'cezar@sobump.com' to it. Alternatively send your repo zipped to cezar@sobump.com
-* Tests would be nice but are not required for the purpose of this exercise. Just focus on getting it done in under 2 hours. If you finish early, feel free to write some unit tests.
+* Tests would be nice but are not required for the purpose of this exercise. Just focus on getting it done in under 90 minutes. If you finish early, feel free to write some unit tests.
 
 > **Use any language you would like**
 > We've provided some boilerplate code in Typescript but feel free to use any language you would like.
