@@ -22,12 +22,6 @@ Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2
 > **Hey this is important!**
 > We hope you can spend about two hours on this project. If you can finish faster -- great! If not, limit yourself and don't spend much longer than 2 hours MAX.
 
-> **Use any language you would like**
-> We've provided some boilerplate code
-
-> **What are we keeping an eye for**
-> Clean code that works. RESTful implementation. Decision making. OOP understanding.
-
 # Installation instructions
 * Clone the repo `git clone git@github.com:SoBump/BackEndTakeHomeChallenge.git`
 * Install dependencies `npm install`
@@ -37,18 +31,24 @@ Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2
 
 # Your Tasks
 
-* Your scope is to create an API that front-end clients can use. A front-end client should be able to show a list of avatar gifs to the user, let the user pick one then let a user create a listing (only title / name of product) and give it the ability to search for listings by title.
+* Your scope is to create an API that front-end clients can use
+* A client should be able to show a list of avatar gifs to the user and let the user pick one 
+* Next step is to enable clients to allow the user create a listing (only title / name of product). Once a couple of products have been added, offer the ability to search for listings by title.
 * Be creative with this. We want to see a functional API. When in doubt, make an executive decision. If you finish early, feel free to polish it up.
 * Use the trending API to fetch a list of gifs from [Giphy API](https://developers.giphy.com/docs/). API Key: `YQD46PNuiExynupQ46HOzJqctivOHt16`
-* Once finished, send your repo zipped to cezar@sobump.com
+* Once finished, create a private repo and add `grigorecezar` or 'cezar@sobump.com' to it. Alternatively send your repo zipped to cezar@sobump.com
 * Tests would be nice but are not required for the purpose of this exercise. Just focus on getting it done in under 2 hours. If you finish early, feel free to write some unit tests.
+
+> **Use any language you would like**
+> We've provided some boilerplate code in Typescript but feel free to use any language you would like.
 
 # Some tips
 
 * We've provided a lot of code for you to get up and running fast! We encourage you to use it if you think it will help, but feel free to roll your own solution if you like.
 * Use any languages, frameworks, or libraries you like. Pick something you are comfortable with.
-* Assume you only need to support modern evergreen browsers.
-* Assume streams can be played with the html <audio> tag. Don't worry about styling this (unless you want to)
+
+> **What are we keeping an eye for**
+> Clean code that works. RESTful implementation. Decision making. OOP understanding.
 
 # Mini BUMP API
 
