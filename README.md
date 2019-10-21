@@ -16,11 +16,10 @@ We're growing fast too. Last year we went through Y Combinator and we've just an
 Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2 hours and build API functionality that enables front-end clients to:
 * get a list of gifs from [Giphy API](https://developers.giphy.com/docs/)
 * update the user with its preferred gif as avatar
-* create listings (products) for a user (only title needed)
-* ability to search products (products) by title
+* ability to search users (users) by either username or name
 
 > **Hey this is important!**
-> We hope you can spend about two hours on this project. If you can finish faster -- great! If not, limit yourself and don't spend much longer than 2 hours MAX.
+> We hope you can spend about 90 minutes on this project. If you can finish faster -- great! If not, limit yourself and don't spend much longer than 90 minutes MAX.
 
 # Installation instructions
 * Clone the repo `git clone git@github.com:SoBump/BackEndTakeHomeChallenge.git`
@@ -32,7 +31,7 @@ Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2
 # Your Tasks
 
 * Your scope is to create an API that front-end clients can use
-* A client should be able to show a list of avatar gifs to the user and let the user pick one 
+* A client should be able to show a list of avatar gifs to the user and let the user pick one
 * Next step is to enable clients to allow the user create a listing (only title / name of product). Once a couple of products have been added, offer the ability to search for listings by title.
 * Be creative with this. We want to see a functional API. When in doubt, make an executive decision. If you finish early, feel free to polish it up.
 * Use the trending API to fetch a list of gifs from [Giphy API](https://developers.giphy.com/docs/). API Key: `YQD46PNuiExynupQ46HOzJqctivOHt16`
@@ -64,5 +63,6 @@ Create a user using its name
 
     POST /users
     body: {
-        name: "Tyrion Lannister"
+        name: "Tyrion Lannister",
+        username: "wineforall",
     }
