@@ -13,7 +13,7 @@ We're growing fast too. Last year we went through Y Combinator and we've just an
 
 # Your mission
 
-Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 2 hours and build API functionality that enables front-end clients to:
+Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 90 minutes and build API functionality that enables front-end clients to:
 * get a list of gifs from [Giphy API](https://developers.giphy.com/docs/)
 * update the user with its preferred gif as avatar
 * ability to search users (users) by either username or name
