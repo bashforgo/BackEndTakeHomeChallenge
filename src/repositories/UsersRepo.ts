@@ -5,7 +5,7 @@ const users = [
   {
     id: 1,
     name: 'Daenerys Targaryen',
-    username: 'daqueenbee',
+    username: 'thequeenbee',
   },
   {
     id: 2,

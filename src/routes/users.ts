@@ -6,7 +6,7 @@ import Router from 'koa-router';
 const usersService = new UsersService()
 const router = new Router()
 
-router.get('/', async ctx => {
+router.get('/users', async ctx => {
   const users: Array<IUser> = usersService.getAll()
 
   ctx.body = {
@@ -14,7 +14,7 @@ router.get('/', async ctx => {
   }
 })
 
-router.post('/', async ctx => {
+router.post('/users', async ctx => {
   const { name, username } = ctx.request.body
   if (!name) {
     throw new BadRequestError('Name not defined.')

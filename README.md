@@ -16,7 +16,7 @@ We're growing fast too. Last year we went through Y Combinator and we've just an
 Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 90 minutes and build API functionality that enables front-end clients to:
 * get a list of gifs from [Giphy API](https://developers.giphy.com/docs/)
 * update the user with its preferred gif as avatar
-* ability to fetch a list of users by either username or name
+* ability to fetch a list of users by either partial username or name
 
 > **Hey this is important!**
 > We hope you can spend about 90 minutes on this project. If you can finish faster -- great! If not, limit yourself and don't spend much longer than 90 minutes MAX.
@@ -32,10 +32,10 @@ Welcome to BUMP! Your mission, should you choose to accept it, is to carve out 9
 
 * Your scope is to create an API that front-end clients can use
 * A client should be able to show a list of avatar gifs to the user and let the user pick one
-* Next step is to enable clients to allow the user create a listing (only title / name of product). Once a couple of products have been added, offer the ability to search for listings by title.
+* Next step is to enable clients to allow the user to search for other users either by username or name, so that they can select and view other users' profiles.
 * Be creative with this. We want to see a functional API. When in doubt, make an executive decision. If you finish early, feel free to polish it up.
 * Use the trending API to fetch a list of gifs from [Giphy API](https://developers.giphy.com/docs/). API Key: `YQD46PNuiExynupQ46HOzJqctivOHt16`
-* Once finished, create a private repo and add `grigorecezar` or 'cezar@sobump.com' to it. Alternatively send your repo zipped to cezar@sobump.com
+* Once finished, create a private repo and add (`grigorecezar` or 'cezar@sobump.com') and (`kingnoosh` or 'anosh@sobump.com') to it. Alternatively send your repo zipped to cezar@sobump.com
 * Tests would be nice but are not required for the purpose of this exercise. Just focus on getting it done in under 90 minutes. If you finish early, feel free to write some unit tests.
 
 > **Use any language you would like**

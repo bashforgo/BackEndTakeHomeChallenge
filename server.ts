@@ -15,7 +15,7 @@ app.use(cors())
 app.use(bodyParser())
 
 // bind REST routes
-router.use('/users', userRoutes)
+router.use(userRoutes)
 
 // alow methods
 app.use(router.routes()).use(router.allowedMethods())
