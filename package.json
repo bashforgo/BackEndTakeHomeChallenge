@@ -11,15 +11,19 @@
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^3.0.0",
-    "@types/koa": "^2.0.50",
-    "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-router": "^7.0.42",
-    "@types/koa__cors": "^2.2.3",
     "koa": "^2.8.2",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.8"
   },
   "devDependencies": {
+    "@types/koa": "^2.0.50",
+    "@types/koa__cors": "^2.2.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/request-promise-native": "1.0.17",
+    "@types/request": "2.48.3",
     "nodemon": "1.19.4",
     "prettier": "1.19.1",
     "ts-node": "8.5.2",

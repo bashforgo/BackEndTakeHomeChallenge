@@ -2,6 +2,7 @@ import cors from '@koa/cors'
 import Koa from 'koa'
 import bodyParser from 'koa-bodyparser'
 import Router from 'koa-router'
+import { default as gifsRoutes } from './src/routes/gifs'
 import { default as userRoutes } from './src/routes/users'
 
 // environment variables
@@ -15,6 +16,7 @@ app.use(cors())
 app.use(bodyParser())
 
 // bind REST routes
+router.use(gifsRoutes)
 router.use(userRoutes)
 
 // alow methods
