@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifsService getTrending should create new model objects 1`] = `
+Array [
+  Object {
+    "title": "a gif 1",
+    "url": "/the-url-1",
+  },
+  Object {
+    "title": "a gif 2",
+    "url": "/the-url-2",
+  },
+  Object {
+    "title": "a gif 3",
+    "url": "/the-url-3",
+  },
+]
+`;

@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`users routes GET /users with query should send the right response 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "avatar": undefined,
+      "id": 3,
+      "name": "Sansa Stark",
+      "username": "joffery.fan",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 4,
+      "name": "Ned Stark",
+      "username": "honouraboveall",
+    },
+  ],
+}
+`;
+
+exports[`users routes GET /users without query should send the right response 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "avatar": undefined,
+      "id": 1,
+      "name": "Daenerys Targaryen",
+      "username": "thequeenbee",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 2,
+      "name": "Jon Snow",
+      "username": "forthebrotherhood",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 3,
+      "name": "Sansa Stark",
+      "username": "joffery.fan",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 4,
+      "name": "Ned Stark",
+      "username": "honouraboveall",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 5,
+      "name": "Cersei Lannister",
+      "username": "bestmuminwesteros",
+    },
+  ],
+}
+`;
+
+exports[`users routes POST /users after creating should send the right response 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "avatar": undefined,
+      "id": 1,
+      "name": "Daenerys Targaryen",
+      "username": "thequeenbee",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 2,
+      "name": "Jon Snow",
+      "username": "forthebrotherhood",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 3,
+      "name": "Sansa Stark",
+      "username": "joffery.fan",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 4,
+      "name": "Ned Stark",
+      "username": "honouraboveall",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 5,
+      "name": "Cersei Lannister",
+      "username": "bestmuminwesteros",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 6,
+      "name": "new user",
+      "username": "admin",
+    },
+  ],
+}
+`;
+
+exports[`users routes POST /users should send the right response 1`] = `
+Object {
+  "user": Object {
+    "avatar": undefined,
+    "id": 6,
+    "name": "new user",
+    "username": "admin",
+  },
+}
+`;
+
+exports[`users routes PUT /users after updating should send the right response 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "avatar": "some dragon or something",
+      "id": 1,
+      "name": "Daenerys",
+      "username": "thequeenbee",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 2,
+      "name": "Jon Snow",
+      "username": "forthebrotherhood",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 3,
+      "name": "Sansa Stark",
+      "username": "joffery.fan",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 4,
+      "name": "Ned Stark",
+      "username": "honouraboveall",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 5,
+      "name": "Cersei Lannister",
+      "username": "bestmuminwesteros",
+    },
+    Object {
+      "avatar": undefined,
+      "id": 6,
+      "name": "new user",
+      "username": "admin",
+    },
+  ],
+}
+`;
+
+exports[`users routes PUT /users should send the right response 1`] = `
+Object {
+  "user": Object {
+    "avatar": "some dragon or something",
+    "id": 1,
+    "name": "Daenerys",
+    "username": "thequeenbee",
+  },
+}
+`;

@@ -8,6 +8,7 @@ import {
   getLastIdUsers,
   getUserById,
   getUsersByQuery,
+  updateUser,
 } from '../repositories/UsersRepo'
 
 export default class UsersService {
@@ -49,6 +50,7 @@ export default class UsersService {
     if (user) {
       user.updateName(source.name)
       user.updateAvatar(source.avatar)
+      updateUser(user)
     } else {
       throw new BadRequestError()
     }

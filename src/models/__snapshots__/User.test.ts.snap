@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User toObject should match snapshot 1`] = `
+Object {
+  "avatar": undefined,
+  "id": 12,
+  "name": "Joe",
+  "username": "joe",
+}
+`;

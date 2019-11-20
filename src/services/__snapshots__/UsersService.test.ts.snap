@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersService create should create the new user 1`] = `
+User {
+  "avatar": undefined,
+  "id": 6,
+  "name": "the dude",
+  "username": "admin",
+}
+`;
+
+exports[`UsersService create should create the new user 2`] = `
+Array [
+  User {
+    "avatar": undefined,
+    "id": 6,
+    "name": "the dude",
+    "username": "admin",
+  },
+]
+`;
+
+exports[`UsersService getAll should return all the users 1`] = `
+Array [
+  User {
+    "avatar": undefined,
+    "id": 1,
+    "name": "Daenerys Targaryen",
+    "username": "thequeenbee",
+  },
+  User {
+    "avatar": undefined,
+    "id": 2,
+    "name": "Jon Snow",
+    "username": "forthebrotherhood",
+  },
+  User {
+    "avatar": undefined,
+    "id": 3,
+    "name": "Sansa Stark",
+    "username": "joffery.fan",
+  },
+  User {
+    "avatar": undefined,
+    "id": 4,
+    "name": "Ned Stark",
+    "username": "honouraboveall",
+  },
+  User {
+    "avatar": undefined,
+    "id": 5,
+    "name": "Cersei Lannister",
+    "username": "bestmuminwesteros",
+  },
+]
+`;
+
+exports[`UsersService search should return some of the users 1`] = `
+Array [
+  User {
+    "avatar": undefined,
+    "id": 3,
+    "name": "Sansa Stark",
+    "username": "joffery.fan",
+  },
+  User {
+    "avatar": undefined,
+    "id": 4,
+    "name": "Ned Stark",
+    "username": "honouraboveall",
+  },
+]
+`;
+
+exports[`UsersService update should update the user 1`] = `
+Array [
+  User {
+    "avatar": "lebowski",
+    "id": 6,
+    "name": "Jeff",
+    "username": "admin",
+  },
+]
+`;

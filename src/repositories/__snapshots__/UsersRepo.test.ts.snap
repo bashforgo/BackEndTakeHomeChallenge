@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersRepo addUser should add the new user 1`] = `
+Array [
+  User {
+    "avatar": undefined,
+    "id": 1,
+    "name": "Daenerys Targaryen",
+    "username": "thequeenbee",
+  },
+  User {
+    "avatar": undefined,
+    "id": 2,
+    "name": "Jon Snow",
+    "username": "forthebrotherhood",
+  },
+  User {
+    "avatar": undefined,
+    "id": 3,
+    "name": "Sansa Stark",
+    "username": "joffery.fan",
+  },
+  User {
+    "avatar": undefined,
+    "id": 4,
+    "name": "Ned Stark",
+    "username": "honouraboveall",
+  },
+  User {
+    "avatar": undefined,
+    "id": 5,
+    "name": "Cersei Lannister",
+    "username": "bestmuminwesteros",
+  },
+  User {
+    "avatar": "undefined",
+    "id": 6,
+    "name": "new user",
+    "username": "admin",
+  },
+]
+`;
+
+exports[`UsersRepo getAllUsers should return all users 1`] = `
+Array [
+  User {
+    "avatar": undefined,
+    "id": 1,
+    "name": "Daenerys Targaryen",
+    "username": "thequeenbee",
+  },
+  User {
+    "avatar": undefined,
+    "id": 2,
+    "name": "Jon Snow",
+    "username": "forthebrotherhood",
+  },
+  User {
+    "avatar": undefined,
+    "id": 3,
+    "name": "Sansa Stark",
+    "username": "joffery.fan",
+  },
+  User {
+    "avatar": undefined,
+    "id": 4,
+    "name": "Ned Stark",
+    "username": "honouraboveall",
+  },
+  User {
+    "avatar": undefined,
+    "id": 5,
+    "name": "Cersei Lannister",
+    "username": "bestmuminwesteros",
+  },
+]
+`;
+
+exports[`UsersRepo getUserById should get the user 1`] = `
+User {
+  "avatar": undefined,
+  "id": 5,
+  "name": "Cersei Lannister",
+  "username": "bestmuminwesteros",
+}
+`;
