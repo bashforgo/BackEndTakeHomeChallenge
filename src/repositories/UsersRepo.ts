@@ -35,6 +35,16 @@ const findUserById = (id: number) => users.find(user => user.id === id)
 export const getLastIdUsers = () =>
   users.reduce((prev, current) => (prev.id > current.id ? prev : current)).id
 export const getAllUsers = (): IUser[] => users.map(user => new User(user))
+export const getUsersByQuery = (query: string): IUser[] =>
+  users
+    .filter(user => {
+      const lowerQuery = query.toLowerCase()
+      return (
+        user.name.toLowerCase().includes(lowerQuery) ||
+        user.username.toLowerCase().includes(lowerQuery)
+      )
+    })
+    .map(user => new User(user))
 export const addUser = (user: IUser) =>
   users.push({
     id: user.getId(),

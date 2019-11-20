@@ -7,6 +7,7 @@ import {
   getAllUsers,
   getLastIdUsers,
   getUserById,
+  getUsersByQuery,
 } from '../repositories/UsersRepo'
 
 export default class UsersService {
@@ -15,6 +16,10 @@ export default class UsersService {
    */
   public getAll(): Array<IUser> {
     return getAllUsers()
+  }
+
+  public search(query: string): Array<IUser> {
+    return getUsersByQuery(query)
   }
 
   /**

@@ -8,7 +8,10 @@ const usersService = new UsersService()
 const router = new Router()
 
 router.get('/users', async ctx => {
-  const users: Array<IUser> = usersService.getAll()
+  const getAll = (): IUser[] => usersService.getAll()
+  const search = (query: string): IUser[] => usersService.search(query)
+  const users =
+    'q' in ctx.request.query ? search(ctx.request.query.q) : getAll()
 
   ctx.body = {
     users: users.map(user => user.toObject()),
