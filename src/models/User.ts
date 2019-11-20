@@ -32,7 +32,6 @@ export default class User implements IUser {
     return this.username
   }
 
-
   /**
    * Sets the name of this user
    */

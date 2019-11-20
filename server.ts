@@ -1,7 +1,7 @@
-import Koa from 'koa'
-import Router from 'koa-router'
 import cors from '@koa/cors'
+import Koa from 'koa'
 import bodyParser from 'koa-bodyparser'
+import Router from 'koa-router'
 import { default as userRoutes } from './src/routes/users'
 
 // environment variables
