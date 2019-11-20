@@ -1,14 +1,17 @@
 import IUser from './IUser'
+import IUserModel from './IUserModel'
 
 export default class User implements IUser {
   private id: number
   private name: string
   private username: string
+  private avatar?: string
 
-  constructor({ id, name, username }) {
+  constructor({ id, name, username, avatar }: IUserModel) {
     this.id = id
     this.name = name
     this.username = username
+    this.avatar = avatar
   }
 
   /**
@@ -32,11 +35,20 @@ export default class User implements IUser {
     return this.username
   }
 
+  public getAvatar() {
+    return this.avatar
+  }
+
   /**
    * Sets the name of this user
    */
   public updateName(name: string) {
     this.name = name
+    return this
+  }
+
+  public updateAvatar(avatar?: string) {
+    this.avatar = avatar
     return this
   }
 
@@ -48,6 +60,7 @@ export default class User implements IUser {
       id: this.getId(),
       name: this.getName(),
       username: this.getUsername(),
+      avatar: this.getAvatar(),
     }
   }
 }

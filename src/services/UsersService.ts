@@ -1,7 +1,13 @@
-import { getAllUsers, getLastIdUsers, addUser } from '../repositories/UsersRepo'
-import User from '../models/User'
-import IUser from '../models/IUser'
 import BadRequestError from '../errors/BadRequestError'
+import IUser from '../models/IUser'
+import IUserModel from '../models/IUserModel'
+import User from '../models/User'
+import {
+  addUser,
+  getAllUsers,
+  getLastIdUsers,
+  getUserById,
+} from '../repositories/UsersRepo'
 
 export default class UsersService {
   /**
@@ -29,6 +35,19 @@ export default class UsersService {
     })
 
     addUser(user)
+    return user
+  }
+
+  public update(source: IUserModel): IUser {
+    const user = getUserById(source.id)
+
+    if (user) {
+      user.updateName(source.name)
+      user.updateAvatar(source.avatar)
+    } else {
+      throw new BadRequestError()
+    }
+
     return user
   }
 }

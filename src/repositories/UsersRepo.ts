@@ -1,7 +1,8 @@
 import IUser from '../models/IUser'
+import IUserModel from '../models/IUserModel'
 import User from '../models/User'
 
-const users = [
+const users: IUserModel[] = [
   {
     id: 1,
     name: 'Daenerys Targaryen',
@@ -29,13 +30,32 @@ const users = [
   },
 ]
 
+const findUserById = (id: number) => users.find(user => user.id === id)
+
 export const getLastIdUsers = () =>
   users.reduce((prev, current) => (prev.id > current.id ? prev : current)).id
-export const getAllUsers = () => users.map(user => new User(user))
-export const findUserById = (id: number) => users.find(user => user.id === id)
+export const getAllUsers = (): IUser[] => users.map(user => new User(user))
 export const addUser = (user: IUser) =>
   users.push({
     id: user.getId(),
     name: user.getName(),
     username: user.getUsername(),
+    avatar: user.getAvatar(),
   })
+export const getUserById = (id: number): IUser | null => {
+  const found = findUserById(id)
+
+  if (found) {
+    return new User(found)
+  }
+
+  return null
+}
+export const updateUser = (user: IUser) => {
+  const found = findUserById(user.getId())
+
+  if (found) {
+    found.name = user.getName()
+    found.avatar = user.getAvatar()
+  }
+}
